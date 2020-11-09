@@ -2,7 +2,7 @@
 
 Use historical project information to create a Machine Learning Model that predicts the duration for a new project.
 
-</b>Project Components:<b>
+**Project Components:**
 
 - Sample Dataset
 - Create ML Model
