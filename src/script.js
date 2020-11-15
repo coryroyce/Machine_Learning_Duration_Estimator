@@ -14,6 +14,7 @@ async function getData() {
     return cleaned;
 }
 
+
 async function run() {
     // Load and plot the original input data that we are going to train on.
     const data = await getData();
@@ -51,19 +52,16 @@ async function run() {
 }
 
 function createModel() {
-    // Create a sequential model
-    const model = tf.sequential(); 
-    
-    // Add a single input layer
-    model.add(tf.layers.dense({inputShape: [1], units: 1, useBias: true}));
-    
-    // Add a hiden dense layer to get non-linearity
-    model.add(tf.layers.dense({units: 10, activation: 'sigmoid'}));
-    
-    // Add an output layer
-    model.add(tf.layers.dense({units: 1, useBias: true}));
-    
-    return model;
+  // Create a sequential model
+  const model = tf.sequential(); 
+  
+  // Add a single input layer
+  model.add(tf.layers.dense({inputShape: [1], units: 1, useBias: true}));
+
+  // Add an output layer
+  model.add(tf.layers.dense({units: 1, useBias: true}));
+
+  return model;
 }
     
 /**
