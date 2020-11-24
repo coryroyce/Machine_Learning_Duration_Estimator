@@ -59,7 +59,10 @@ function createModel() {
   model.add(tf.layers.dense({inputShape: [1], units: 1, useBias: true}));
 
   // Add hidden layer to introduce non-linearity
-  model.add(tf.layers.dense({units: 50, activation: 'sigmoid'}));
+  model.add(tf.layers.dense({units: 50, activation: 'relu'}));
+
+  // Add hidden layer to introduce non-linearity
+  model.add(tf.layers.dense({units: 50, activation: 'relu'}));
   
   // Add an output layer
   model.add(tf.layers.dense({units: 1, useBias: true}));
