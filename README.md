@@ -5,6 +5,6 @@ Use historical project information to create a Machine Learning Model that predi
 **Project Components:**
 
 - Sample Dataset
-- Create ML Model
+- Create ML Model in GCP
 - Serve prediction for Model
 - Interative website
